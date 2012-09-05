@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="nio" root=".">
+      <df name="ArrayByteBuffer">
+        <in>ArrayByteBuffer.cpp</in>
+        <in>ArrayByteBuffer.h</in>
+      </df>
+      <df name="Buffer">
+        <in>Buffer.cpp</in>
+        <in>Buffer.h</in>
+      </df>
+      <df name="ByteBuffer">
+        <in>ByteBuffer.cpp</in>
+        <in>ByteBuffer.h</in>
+      </df>
+      <df name="doc">
+      </df>
+      <df name="ExternalEepromByteBuffer">
+        <in>ExternalEepromByteBuffer.cpp</in>
+        <in>ExternalEepromByteBuffer.h</in>
+      </df>
+      <df name="ResourceByteBuffer">
+        <in>ResourceByteBuffer.cpp</in>
+        <in>ResourceByteBuffer.h</in>
+      </df>
+      <df name="test">
+        <in>main.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>nio.bin</executablePath>
+        </makeTool>
+      </makefileType>
+      <folder path="nio/ByteBuffer">
+        <ccTool>
+          <incDir>
+            <pElem>Buffer</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="nio/ExternalEepromByteBuffer">
+        <ccTool>
+          <incDir>
+            <pElem>../driver/memory/ExternalEeprom</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="nio/ResourceByteBuffer">
+        <ccTool>
+          <incDir>
+            <pElem>../rs/Resource</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>
