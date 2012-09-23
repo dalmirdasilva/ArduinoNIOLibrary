@@ -14,8 +14,6 @@
         <in>ByteBuffer.cpp</in>
         <in>ByteBuffer.h</in>
       </df>
-      <df name="doc">
-      </df>
       <df name="ExternalEepromByteBuffer">
         <in>ExternalEepromByteBuffer.cpp</in>
         <in>ExternalEepromByteBuffer.h</in>
